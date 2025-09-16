@@ -1,0 +1,86 @@
+\documentclass[a4paper,10pt]{article}
+%\documentclass[a4paper,10pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{cancel}
+
+\title{Límites}
+\author{Axel Ulices Alcantar Gutiérrez}
+\date{13 Sep 2025}
+
+\pdfinfo{%
+  /Title    (Límites)
+  /Author   (Axel Ulices Alcantar Gutiérrez)
+  /Creator  ()
+  /Producer ()
+  /Subject  ()
+  /Keywords (Límites Matemáticas)
+}
+
+\begin{document}
+\maketitle
+
+\section{Límite con indeterminación 0/0}
+
+\begin{enumerate}
+	\item Límite a resolver
+	      $$\lim_{x\to2}\frac{x^{2} - 4}{4x - 8}$$
+	      Cuando se resuelve un límite lo primero que se tiene que hacer es sustituir el valor de la variable.
+
+	\item Sustituir valores
+	      $$\frac{(2)^{2} - 4}{4(2) - 8} = \frac{4 - 4}{8 - 8} = \frac{0}{0}$$
+
+	      $\frac{0}{0}$ es una indeterminación, para resolver esto podemos factorizar. Cuando la ecuación tenga una forma $(a^2 - b^2)$ se puede factorizar de la manera $(a + b)(a - b)$. A esto se le llama \textbf{diferencia de cuadrados}.
+
+	\item Factorizar numerador
+	      $$\frac{x^{2} - 4}{4x - 8} = \frac{(x + 2)(x - 2)}{4x - 8}$$
+
+	      Como puedes ver, en este momento todavía no podemos hacer sustitución directa, pero para resolver esto podemos factorizar el denominador diviendo los términos entre 4.
+
+	\item Factorizar denominador
+	      $$\frac{(x + 2)(x - 2)}{4(x - 2)}$$
+
+	      La ecuación ahora sí puede cambiar cancelando $(x - 2)$ tanto del numerador como del denominador.
+
+	\item Cancelando términos
+	      $$\frac{(x + 2)\cancel{(x - 2)}}{4\cancel{(x - 2)}} = \frac{x + 2}{4}$$
+
+	      La ecuacion ha tomado un nuevo rumbo, es hora de sustituir los valores de nuevo.
+
+	\item Sustituir valores de nuevo
+	      $$\frac{2 + 2}{4} = \frac{4}{4} = 1$$
+
+	      Ahora no hay indeterminacion, lo que significa que hemos resuelto el limite.
+
+	\item Resultado
+	      $$\boxed{\lim_{x\to2}\frac{x^{2} - 4}{4x - 8} = 1}$$
+
+\end{enumerate}
+
+\section{Límite con indeterminación 0/0}
+\begin{enumerate}
+	\item Límite a resolver
+	      $$\lim_{x\to4}\frac{x^{2} - 4x}{x^{2} - 16}$$
+
+	\item Sustituir valores
+	      $$\frac{(4)^{2} - 4(4)}{(4)^{2} - 16} = \frac{16 - 16}{16 - 16} = \frac{0}{0}$$
+
+	      Es una indeterminación, por lo que tendremos que factorizar. En el numerador podemos factorizar por medio del factor común.
+
+	\item Factorizar numerador
+	      $$\frac{x^{2} - 4x}{x^{2} - 16} = \frac{x(x - 4)}{x^{2} - 16}$$
+
+	      Ahora tendremos que factorizar el denominador para verificar si podemos cancelar los términos, el denominador tiene la forma $(a^{2} - b^{2})$.
+
+	\item Factorizar denominador
+	      $$\frac{x(x - 4)}{x^{2} - 16} = \frac{x(x - 4)}{(x + 4)(x - 4)}$$
+
+	      Ya que en el numerador y en el denominador solo se está haciendo multiplicación; además de que tenemos términos semejantes en ambos lados, podemos cancelar los términos.
+
+	\item Cancelar términos
+	      $$\frac{x(x - 4)}{(x + 4)(x - 4)} = \frac{x\cancel{(x - 4)}}{(x + 4)\cancel{(x - 4)}} = \frac{x}{x + 4}$$
+\end{enumerate}
+
+\end{document}
