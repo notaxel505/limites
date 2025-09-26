@@ -123,4 +123,41 @@
 	      \]
 \end{enumerate}
 
+\newpage
+
+\section{Límite con indeterminación 0/0}
+
+\begin{enumerate}
+	\item Límite a resolver
+	      \[
+		      \lim_{x\to-3}\frac{x + 3}{x^{2} - 9}
+	      \]
+	\item Sustituir valores
+	      \[
+		      \frac{x + 3}{x^{2} - 9} = \frac{(-3) + 3}{(-3)^{2} - 9} = \frac{0}{9 - 9} = \frac{0}{0}
+	      \]
+
+	      Es una indeterminación, por lo que tendremos que factorizar. El denominador lo podemos factorizar por medio de diferencia de cuadrados.
+	\item Factorizar denominador
+	      \[
+		      \frac{x + 3}{x^{2} - 9} = \frac{x + 3}{(x + 3)(x - 3)}
+	      \]
+
+	      Ahora como se puede observar podemos cancelar los términos en este momento.
+	\item Cancelar términos
+	      \[
+		      \frac{x + 3}{(x + 3)(x - 3)} = \frac{\cancel{x + 3}}{\cancel{(x + 3)}(x - 3)} = x - 3
+	      \]
+	\item Sustituir valores de nuevo
+	      \[
+		      x - 3 = (-3) - 3 = -6
+	      \]
+
+	      No hay indeterminación, hemos resuelto el problema.
+	\item Resultado
+	      \[
+		      \boxed{\lim_{x\to-3}\frac{x + 3}{x^{2} - 9} = -6}
+	      \]
+\end{enumerate}
+
 \end{document}
